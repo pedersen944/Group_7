@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='stylesheet.css'>
+</head>
+<body>
+    
+    <input class="Que" id="Question" type="text" onchange="OracleMessage()" placeholder="Question">
+    <div class="Answ" id="Answer">Svar</div>
+    
+    <audio>
+        <source src="Syre2.mp3">
+      </audio>
+    
+      <script>
+         var answer = document.getElementById('Answer').innerHTML;
+         
+         function OracleMessage() {
+             answer = `Hello`
+          }
+
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    background-image: url("Blink182.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Answ {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(137, 202, 255);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.Que {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Que:hover {
+    background-color: orange;
+}
+
+textarea {
+    width: 500px;
+    height: 800 px;
+    clear: left;
+}
