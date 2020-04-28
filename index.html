@@ -16,11 +16,19 @@
       </audio>
     
       <script>
-         var answer = document.getElementById('Answer').innerHTML;
-         
+         var answer = document.getElementById('Answer');
+         var question = document.getElementById('Question');
+         var arr = ['Tekst1','Tekst2','Tekst3','Tekst4','Tekst5'];
          function OracleMessage() {
-             answer = `Hello`
+             
+             randomTekst = arr[Math.floor(Math.random()*arr.length)];
+             answer.innerHTML = randomTekst;
+             if (question.value == 'triggered') {
+                 answer.innerHTML = 'Trigga'
+             }
           }
+
+        
 
 
       </script>
