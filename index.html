@@ -11,7 +11,7 @@
     <input class="Que" id="Question" type="text" onchange="OracleMessage()" placeholder="Question">
     <div class="Answ" id="Answer">Svar</div>
     
-    <audio>
+    <audio autoplay loop>
         <source src="Syre2.mp3">
       </audio>
     
@@ -20,7 +20,6 @@
          var question = document.getElementById('Question');
          var arr = ['Tekst1','Tekst2','Tekst3','Tekst4','Tekst5'];
          function OracleMessage() {
-             
              randomTekst = arr[Math.floor(Math.random()*arr.length)];
              answer.innerHTML = randomTekst;
              if (question.value == 'triggered') {
