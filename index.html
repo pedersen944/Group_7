@@ -9,7 +9,7 @@
 <body>
     
     <input class="Que" id="Question" type="text" onchange="OracleMessage()" placeholder="Question">
-    <div class="Answ" id="Answer">Svar</div>
+    <div class="Answ" id="Answer"></div>
     
     <audio autoplay loop>
         <source src="Syre2.mp3">
@@ -18,16 +18,12 @@
       <script>
          var answer = document.getElementById('Answer');
          var question = document.getElementById('Question');
-         var arr = ['Stop living in the shadow of a helicopter',
-         'Tekst2',
-         'Tekst3',
-         'Tekst4',
-         'Tekst5'];
+         var arr = ['Where are you? and im so sorry','Stop living in the shadow of a helicopter','Smoked a bong, killed a cat/Had my nuts attacked by rats','Nobody likes you when youre 23','Na na, na na, na na, na na, na, na x4'];
          function OracleMessage() {
              randomTekst = arr[Math.floor(Math.random()*arr.length)];
              answer.innerHTML = randomTekst;
-             if (question.value == 'trigger') {
-                 answer.innerHTML = 'triggered'
+             if (question.value == 'ufo') {
+                 answer.innerHTML = 'Look like the Star of Bethlehem, anyone? Wild to think that some of the ancient stories in religious texts may have been advanced technological craft.. - Tom DeLonge'
              }
           }
 
@@ -35,5 +31,5 @@
 
 
       </script>
-</body>
-</html>
+</body> 
+</html> 
